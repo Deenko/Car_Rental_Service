@@ -5486,8 +5486,8 @@ button.bg-dark:focus {
   border-top-right-radius: 0.25rem !important; }
 
 .rounded-right {
-  border-top-right-radius: 0.25rem !important;
-  border-bottom-right-radius: 0.25rem !important; }
+  border-top-right-radius: 3.25rem !important;
+  border-bottom-right-radius: 3.25rem !important; }
 
 .rounded-bottom {
   border-bottom-right-radius: 0.25rem !important;
@@ -8137,8 +8137,16 @@ body {
   background: #fff;
   font-size: 16px;
   line-height: 1.8;
+  text-align: center;
   font-weight: 400;
-  color: #999999; }
+  color: #999999;
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=010101&c2=ffffff&gt=l&gd=dbb
+*/
+background: #010101;
+background: linear-gradient(0deg, #010101, #FFFFFF);
+ }
   body.menu-show {
     overflow: hidden;
     position: fixed;
@@ -8158,7 +8166,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
-  color: white;
+  color: black;
   font-weight: 400; }
 
 .text-primary {
@@ -8366,8 +8374,10 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     opacity: .3;
-    background: #000000;
+    background: #010000;
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/2021-audi-r8-mmp-1-1603746624.jpg?crop=0.756xw:0.568xh;0.220xw,0.316xh&resize=2048:*);
     height: 850px; }
+
   @media (max-width: 991.98px) {
     .hero-wrap {
       height: 1150px; }
@@ -8610,7 +8620,7 @@ h1, h2, h3, h4, h5,
 .bg-light {
 
   background: #010101 !important;
-  background: linear-gradient(0deg, #535353,#010101)  !important;  
+ background: linear-gradient(180deg, black, grey, transparent) !important
 }
 
 .bg-primary {
@@ -8988,7 +8998,8 @@ border-radius: 10cm;}
     right: 0;
     bottom: 0;
     content: '';
-    background: #01d28e;
+    text-align: center;
+    background: black  ;
     z-index: -2;
     width: 63%; }
     @media (max-width: 767.98px) {
@@ -9002,7 +9013,8 @@ border-radius: 10cm;}
 
 .services-wrap {
   padding: 4em 3em;
-  background: #ff6600;
+  opacity: 85%;
+  background: white;
   -webkit-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03);
   -moz-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03);
   box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03); }
@@ -9011,6 +9023,18 @@ border-radius: 10cm;}
     font-weight: 600; 
     text-align: center;
   }
+
+  .services-wrap:hover{
+    padding: 4em 3em;
+    opacity: 95%;
+    -webkit-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03);
+    -moz-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03);
+    box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.03); }
+    .services-wrap .heading-section {
+      font-size: 24px;
+      font-weight: 600; 
+      text-align: center;
+    }
 
 .services .icon {
   width: 90px;
@@ -9137,7 +9161,15 @@ textarea.form-control {
   visibility: hidden; }
 
 .bg-primary {
-  background-image: linear-gradient(to right top, #ff6600, #ff6b09, #ff6f12, #ff7419, #ff781f) !important; }
+  background: white !important;
+  opacity: 80% !important;  
+}
+
+.bg-primary:hover{
+  background: white !important;
+  opacity: 99% !important;  
+
+}
 
 .bg-black {
   background: #000000; }
